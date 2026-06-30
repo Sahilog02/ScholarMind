@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+.chroma/
+.pytest_cache/
+eval/eval_raw_results.json
+eval/ragas_results.csv
+.streamlit/secrets.toml
+.DS_Store

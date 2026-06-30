@@ -1,0 +1,22 @@
+[
+  {"id": 1, "topic": "Sequence modeling", "claim": "Transformers outperform RNNs on long-sequence modeling tasks.", "expected_verdict": "supported"},
+  {"id": 2, "topic": "Model scaling", "claim": "Larger language models exhibit emergent abilities not present in smaller models.", "expected_verdict": "contested"},
+  {"id": 3, "topic": "RLHF", "claim": "Reinforcement learning from human feedback improves the helpfulness of language models without degrading their factual accuracy.", "expected_verdict": "contested"},
+  {"id": 4, "topic": "Retrieval-augmented generation", "claim": "Retrieval-augmented generation reduces hallucination in large language models.", "expected_verdict": "supported"},
+  {"id": 5, "topic": "Prompting", "claim": "Chain-of-thought prompting improves reasoning performance in large language models.", "expected_verdict": "supported"},
+  {"id": 6, "topic": "Mixture of experts", "claim": "Mixture-of-experts architectures achieve better compute efficiency than dense models at equivalent performance.", "expected_verdict": "supported"},
+  {"id": 7, "topic": "Federated learning", "claim": "Federated learning preserves model accuracy compared to centralized training on the same data.", "expected_verdict": "contested"},
+  {"id": 8, "topic": "Graph neural networks", "claim": "Graph neural networks outperform traditional methods on node classification tasks.", "expected_verdict": "supported"},
+  {"id": 9, "topic": "Adversarial robustness", "claim": "Adversarial training improves model robustness without significantly hurting clean accuracy.", "expected_verdict": "refuted"},
+  {"id": 10, "topic": "Knowledge distillation", "claim": "Knowledge distillation allows small models to match the performance of much larger teacher models.", "expected_verdict": "contested"},
+  {"id": 11, "topic": "Self-supervised learning", "claim": "Self-supervised pretraining improves downstream performance on low-resource NLP tasks.", "expected_verdict": "supported"},
+  {"id": 12, "topic": "Generative models", "claim": "Diffusion models produce higher-quality images than GANs.", "expected_verdict": "supported"},
+  {"id": 13, "topic": "Quantization", "claim": "Post-training quantization to 4-bit precision preserves most of the accuracy of full-precision LLMs.", "expected_verdict": "supported"},
+  {"id": 14, "topic": "Prompting", "claim": "Few-shot prompting outperforms zero-shot prompting on most NLP benchmarks.", "expected_verdict": "contested"},
+  {"id": 15, "topic": "Multi-agent systems", "claim": "Multi-agent LLM debate improves factual accuracy over single-agent responses.", "expected_verdict": "contested"},
+  {"id": 16, "topic": "Vision transformers", "claim": "Vision transformers outperform convolutional neural networks on image classification when given sufficient training data.", "expected_verdict": "supported"},
+  {"id": 17, "topic": "Continual learning", "claim": "Continual learning methods effectively mitigate catastrophic forgetting in neural networks.", "expected_verdict": "contested"},
+  {"id": 18, "topic": "Differential privacy", "claim": "Differentially private training significantly degrades model utility compared to non-private training.", "expected_verdict": "contested"},
+  {"id": 19, "topic": "Efficient attention", "claim": "Sparse attention mechanisms achieve comparable performance to full attention at lower computational cost.", "expected_verdict": "supported"},
+  {"id": 20, "topic": "In-context learning", "claim": "In-context learning ability emerges primarily as a function of model scale rather than training data composition.", "expected_verdict": "contested"}
+]
