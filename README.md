@@ -20,7 +20,7 @@ RAGAS-evaluated, LangSmith-traced output.
 
 ### Human-in-the-Loop Review (Paper Selection)
 
-![Human Review Top](assets/human_review.png)
+![Human Review Top](assets/human_review_top.png)
 
 ### Human-in-the-Loop Review (Approval)
 
