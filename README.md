@@ -18,9 +18,13 @@ RAGAS-evaluated, LangSmith-traced output.
 
 ![Home](assets/home.png)
 
-### Human-in-the-Loop Review
+### Human-in-the-Loop Review (Paper Selection)
 
-![Human Review](assets/human_review.png)
+![Human Review Top](assets/human_review.png)
+
+### Human-in-the-Loop Review (Approval)
+
+![Human Review Bottom](assets/human_review_bottom.png)
 
 ### Final Verdict
 
