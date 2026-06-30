@@ -66,7 +66,7 @@ OpenAI · Streamlit
 Requires Python 3.10+.
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Sahilog02/ScholarMind.git
 cd scholarmind
 python3 -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -166,17 +166,6 @@ scholarmind/
   graph node, since faithfulness scoring is naturally a post-hoc batch
   operation over many runs, not a per-conversation step.
 
-## Resume bullet
-
-Fill this in with your *actual* numbers from `eval/run_eval.py` — see the
-setup notes above:
-
-> Built a multi-agent literature-review system (LangGraph, Groq/Llama,
-> arXiv + Semantic Scholar APIs) with Planner, Researcher, Critic, and
-> Synthesiser agents; Critic-to-Researcher conditional loop auto-refines
-> search terms on weak evidence; human-in-the-loop checkpoint via LangGraph
-> interrupt; evaluated on 20 claims achieving RAGAS faithfulness **[your
-> score]**; LangSmith observability integrated.
 
 ## License
 
