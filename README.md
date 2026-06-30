@@ -12,6 +12,20 @@ Built with [LangGraph](https://github.com/langchain-ai/langgraph) on a real
 cyclic graph (not a linear chain), with a human-in-the-loop checkpoint and a
 RAGAS-evaluated, LangSmith-traced output.
 
+## Screenshots
+
+### Home Screen
+
+![Home](assets/home.png)
+
+### Human-in-the-Loop Review
+
+![Human Review](assets/human_review.png)
+
+### Final Verdict
+
+![Final Verdict](assets/final_output.png)
+
 ## Why this isn't just a pipeline
 
 Most "agent" demos are a DAG: step 1 → step 2 → step 3, done. The interesting
