@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "topic": "Sequence modeling",
+    "claim": "Transformers outperform RNNs on long-sequence modeling tasks.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 2,
+    "topic": "Model scaling",
+    "claim": "Larger language models exhibit emergent abilities not present in smaller models.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 3,
+    "topic": "RLHF",
+    "claim": "Reinforcement learning from human feedback improves the helpfulness of language models without degrading their factual accuracy.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 4,
+    "topic": "Retrieval-augmented generation",
+    "claim": "Retrieval-augmented generation reduces hallucination in large language models.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 5,
+    "topic": "Prompting",
+    "claim": "Chain-of-thought prompting improves reasoning performance in large language models.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 6,
+    "topic": "Scaling laws",
+    "claim": "Model performance scales predictably as a power law with compute, data, and parameters.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 7,
+    "topic": "Scaling laws",
+    "claim": "Data quality matters more than data quantity for pretraining large language models.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 8,
+    "topic": "Mixture of experts",
+    "claim": "Mixture-of-experts architectures improve compute efficiency without sacrificing model quality.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 9,
+    "topic": "Attention mechanisms",
+    "claim": "Self-attention has quadratic complexity that fundamentally limits context length in transformers.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 10,
+    "topic": "Efficient attention",
+    "claim": "Sparse attention mechanisms match full attention quality while reducing compute cost.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 11,
+    "topic": "State space models",
+    "claim": "State space models like Mamba match transformer quality on language modeling while scaling better with sequence length.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 12,
+    "topic": "Positional encoding",
+    "claim": "Rotary positional embeddings generalize better to longer sequences than learned absolute embeddings.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 13,
+    "topic": "Tokenization",
+    "claim": "Byte-level tokenization eliminates out-of-vocabulary issues without hurting downstream performance.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 14,
+    "topic": "Tokenizer-free models",
+    "claim": "Tokenizer-free character-level models achieve comparable performance to subword tokenizers on standard benchmarks.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 15,
+    "topic": "In-context learning",
+    "claim": "Large language models can learn new tasks from a few examples in the prompt without weight updates.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 16,
+    "topic": "Few-shot learning",
+    "claim": "Few-shot prompting always outperforms zero-shot prompting on reasoning tasks.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 17,
+    "topic": "Fine-tuning",
+    "claim": "Full fine-tuning consistently outperforms parameter-efficient fine-tuning methods like LoRA.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 18,
+    "topic": "Parameter-efficient fine-tuning",
+    "claim": "LoRA achieves performance comparable to full fine-tuning while updating a small fraction of parameters.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 19,
+    "topic": "Quantization",
+    "claim": "Post-training quantization to 4-bit precision preserves most of a large language model's accuracy.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 20,
+    "topic": "Knowledge distillation",
+    "claim": "Knowledge distillation allows small student models to match the performance of much larger teacher models.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 21,
+    "topic": "Model compression",
+    "claim": "Pruning neural networks can remove a majority of parameters with minimal accuracy loss.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 22,
+    "topic": "Neural architecture search",
+    "claim": "Neural architecture search reliably discovers architectures that outperform hand-designed ones.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 23,
+    "topic": "Optimization",
+    "claim": "Adam optimizer converges faster than SGD for training large transformer models.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 24,
+    "topic": "Optimization",
+    "claim": "SGD with momentum generalizes better than Adam on image classification tasks.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 25,
+    "topic": "Learning rate schedules",
+    "claim": "Warmup followed by cosine decay learning rate schedules improve transformer training stability.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 26,
+    "topic": "Batch normalization",
+    "claim": "Batch normalization primarily works by reducing internal covariate shift.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 27,
+    "topic": "Dropout",
+    "claim": "Dropout regularization improves generalization in deep neural networks.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 28,
+    "topic": "Curriculum learning",
+    "claim": "Training on easy examples before hard examples consistently improves final model performance.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 29,
+    "topic": "Data augmentation",
+    "claim": "Data augmentation improves robustness of image classifiers to distribution shift.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 30,
+    "topic": "Active learning",
+    "claim": "Active learning strategies reduce labeling costs while maintaining model performance.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 31,
+    "topic": "Semi-supervised learning",
+    "claim": "Semi-supervised learning with pseudo-labeling improves performance when labeled data is scarce.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 32,
+    "topic": "Self-supervised learning",
+    "claim": "Self-supervised pretraining produces representations that transfer well to downstream vision tasks.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 33,
+    "topic": "Contrastive learning",
+    "claim": "Contrastive learning methods like SimCLR require large batch sizes to perform well.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 34,
+    "topic": "Transfer learning",
+    "claim": "Fine-tuning a pretrained model always outperforms training from scratch on small datasets.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 35,
+    "topic": "Domain adaptation",
+    "claim": "Unsupervised domain adaptation can close most of the performance gap between source and target domains.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 36,
+    "topic": "Sim-to-real transfer",
+    "claim": "Policies trained purely in simulation transfer effectively to real-world robots without additional adaptation.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 37,
+    "topic": "Adversarial robustness",
+    "claim": "Adversarial training improves robustness to adversarial examples at the cost of clean accuracy.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 38,
+    "topic": "Adversarial examples",
+    "claim": "Adversarial examples transfer between different neural network architectures.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 39,
+    "topic": "Out-of-distribution detection",
+    "claim": "Softmax confidence scores are reliable indicators of out-of-distribution inputs.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 40,
+    "topic": "Calibration",
+    "claim": "Modern deep neural networks tend to be overconfident and poorly calibrated.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 41,
+    "topic": "Uncertainty estimation",
+    "claim": "Bayesian deep learning methods provide well-calibrated uncertainty estimates for neural networks.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 42,
+    "topic": "Ensemble methods",
+    "claim": "Deep ensembles improve predictive uncertainty estimation compared to single models.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 43,
+    "topic": "Explainability",
+    "claim": "Saliency maps reliably identify the input features a neural network actually relies on.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 44,
+    "topic": "Interpretability",
+    "claim": "Attention weights in transformers directly indicate which tokens the model considers important for its output.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 45,
+    "topic": "Mechanistic interpretability",
+    "claim": "Individual neurons in large language models often encode multiple unrelated concepts (polysemanticity).",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 46,
+    "topic": "Probing classifiers",
+    "claim": "Linear probing of intermediate representations reveals what linguistic information a language model has learned.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 47,
+    "topic": "Alignment",
+    "claim": "Direct preference optimization achieves alignment quality comparable to RLHF with a simpler training pipeline.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 48,
+    "topic": "Constitutional AI",
+    "claim": "Constitutional AI methods reduce the need for human-labeled preference data in alignment.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 49,
+    "topic": "Red-teaming",
+    "claim": "Automated red-teaming can discover a broad range of jailbreak prompts against language models.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 50,
+    "topic": "Jailbreaking",
+    "claim": "Safety fine-tuning fully prevents language models from producing harmful content under adversarial prompting.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 51,
+    "topic": "Prompt injection",
+    "claim": "Current defenses reliably prevent prompt injection attacks against LLM-powered applications.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 52,
+    "topic": "Watermarking",
+    "claim": "Statistical watermarking of LLM outputs can be reliably detected without hurting text quality.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 53,
+    "topic": "Membership inference",
+    "claim": "Membership inference attacks can reliably determine whether a specific example was in a model's training set.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 54,
+    "topic": "Model stealing",
+    "claim": "Black-box model extraction attacks can replicate the functionality of a deployed model using only its API.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 55,
+    "topic": "Backdoor attacks",
+    "claim": "Backdoor triggers inserted during training can be reliably detected by existing defenses.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 56,
+    "topic": "Differential privacy",
+    "claim": "Differentially private training significantly reduces model utility compared to non-private training.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 57,
+    "topic": "Federated learning",
+    "claim": "Federated learning achieves accuracy comparable to centralized training on non-IID data.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 58,
+    "topic": "Graph neural networks",
+    "claim": "Graph neural networks suffer from over-smoothing as depth increases.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 59,
+    "topic": "Graph neural networks",
+    "claim": "Message-passing GNNs can provably distinguish any pair of non-isomorphic graphs.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 60,
+    "topic": "Reinforcement learning",
+    "claim": "Model-based reinforcement learning is more sample-efficient than model-free methods.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 61,
+    "topic": "Offline RL",
+    "claim": "Offline reinforcement learning algorithms suffer from distributional shift between the behavior and learned policies.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 62,
+    "topic": "Exploration",
+    "claim": "Intrinsic motivation and curiosity-driven exploration improve sample efficiency in sparse-reward environments.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 63,
+    "topic": "Imitation learning",
+    "claim": "Behavioral cloning alone is sufficient to match expert performance in long-horizon tasks.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 64,
+    "topic": "Meta-learning",
+    "claim": "Model-agnostic meta-learning (MAML) enables fast adaptation to new tasks with few gradient steps.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 65,
+    "topic": "Continual learning",
+    "claim": "Neural networks suffer catastrophic forgetting when trained sequentially on new tasks.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 66,
+    "topic": "Continual learning",
+    "claim": "Replay-based methods fully eliminate catastrophic forgetting in continual learning.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 67,
+    "topic": "Vision transformers",
+    "claim": "Vision transformers outperform convolutional networks on image classification when given enough training data.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 68,
+    "topic": "Vision transformers",
+    "claim": "Convolutional neural networks generalize better than vision transformers on small datasets.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 69,
+    "topic": "Object detection",
+    "claim": "Anchor-free detectors achieve comparable accuracy to anchor-based detectors with simpler design.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 70,
+    "topic": "Semantic segmentation",
+    "claim": "Vision transformer backbones improve semantic segmentation accuracy over CNN backbones.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 71,
+    "topic": "Diffusion models",
+    "claim": "Diffusion models produce higher-fidelity images than GANs on standard benchmarks.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 72,
+    "topic": "Generative adversarial networks",
+    "claim": "GAN training is notoriously unstable due to the adversarial min-max objective.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 73,
+    "topic": "Text-to-image generation",
+    "claim": "Text-to-image diffusion models struggle with accurately rendering text within generated images.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 74,
+    "topic": "Speech recognition",
+    "claim": "Self-supervised speech representations improve automatic speech recognition in low-resource languages.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 75,
+    "topic": "Text-to-speech",
+    "claim": "Neural text-to-speech systems now produce speech indistinguishable from human recordings in blind listening tests.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 76,
+    "topic": "Machine translation",
+    "claim": "Neural machine translation systems match human translation quality on high-resource language pairs.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 77,
+    "topic": "Sentiment analysis",
+    "claim": "Fine-tuned transformer models outperform lexicon-based methods for sentiment analysis.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 78,
+    "topic": "Named entity recognition",
+    "claim": "Large language models with few-shot prompting match fine-tuned models on named entity recognition.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 79,
+    "topic": "Question answering",
+    "claim": "Extractive question-answering models fail on questions requiring multi-hop reasoning.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 80,
+    "topic": "Summarization",
+    "claim": "Automatic summarization metrics like ROUGE correlate poorly with human judgments of summary quality.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 81,
+    "topic": "Code generation",
+    "claim": "Large language models can generate functionally correct code for competitive programming problems at the level of expert humans.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 82,
+    "topic": "Program synthesis",
+    "claim": "Providing execution feedback improves LLM-based code generation accuracy over single-pass generation.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 83,
+    "topic": "Theorem proving",
+    "claim": "Language models can generate valid formal proofs for a majority of undergraduate-level mathematics problems.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 84,
+    "topic": "Multi-agent systems",
+    "claim": "Multi-agent LLM debate improves factual accuracy compared to a single model answering alone.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 85,
+    "topic": "Tool use",
+    "claim": "Giving language models access to external tools improves their accuracy on arithmetic and factual tasks.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 86,
+    "topic": "Agentic planning",
+    "claim": "Current large language model agents can reliably complete long-horizon multi-step tasks without human intervention.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 87,
+    "topic": "Long-context modeling",
+    "claim": "Extending context length alone is sufficient for models to effectively use distant information (no 'lost in the middle' effect).",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 88,
+    "topic": "Retrieval methods",
+    "claim": "Dense retrieval methods consistently outperform sparse (BM25-style) retrieval on open-domain question answering.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 89,
+    "topic": "RAG vs long context",
+    "claim": "Retrieval-augmented generation is more compute-efficient than simply extending a model's context window for knowledge-intensive tasks.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 90,
+    "topic": "Embedding models",
+    "claim": "Contrastively trained sentence embeddings capture semantic similarity better than pooled token embeddings from language models.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 91,
+    "topic": "Causal inference",
+    "claim": "Causal representation learning can recover true causal variables from purely observational data without any interventions.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 92,
+    "topic": "Fairness in ML",
+    "claim": "Debiasing techniques applied at training time reduce demographic disparities without significantly harming overall accuracy.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 93,
+    "topic": "Bias in language models",
+    "claim": "Large language models reproduce and can amplify social biases present in their training data.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 94,
+    "topic": "Energy efficiency",
+    "claim": "Training large language models has a significant and growing carbon footprint.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 95,
+    "topic": "Synthetic data",
+    "claim": "Training on model-generated synthetic data alone, without new real data, leads to model performance degradation over generations (model collapse).",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 96,
+    "topic": "Model merging",
+    "claim": "Averaging the weights of independently fine-tuned models can produce a model that outperforms each individual model.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 97,
+    "topic": "Evaluation",
+    "claim": "Common LLM benchmarks are frequently contaminated with test data that leaked into pretraining corpora.",
+    "expected_verdict": "supported"
+  },
+  {
+    "id": 98,
+    "topic": "Evaluation",
+    "claim": "Automatic LLM-as-a-judge evaluation correlates well with human preference judgments.",
+    "expected_verdict": "contested"
+  },
+  {
+    "id": 99,
+    "topic": "Human evaluation",
+    "claim": "Human evaluators reliably distinguish AI-generated text from human-written text.",
+    "expected_verdict": "refuted"
+  },
+  {
+    "id": 100,
+    "topic": "Emergent abilities",
+    "claim": "So-called emergent abilities in large language models are primarily an artifact of discontinuous evaluation metrics rather than a sudden change in model capability.",
+    "expected_verdict": "contested"
+  }
+]
